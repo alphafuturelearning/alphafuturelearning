@@ -1,0 +1,107 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* Background image container */
+.coming-soon-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Main content styles */
+.content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    animation: logoBounce 2s infinite;
+}
+
+.coming-soon-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.contact-info a {
+    color: #c8a4eb;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    color: #c8a4eb;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logoBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
